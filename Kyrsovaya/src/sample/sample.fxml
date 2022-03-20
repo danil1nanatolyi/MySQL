@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<VBox>-->
+<!--    <HBox>-->
+<!--        <padding>-->
+<!--            <Insets top="10" right="10" bottom="10" left="10"/>-->
+<!--        </padding>-->
+<!--        <Label>-->
+<!--            <padding>-->
+<!--                <Insets top="0" right="10" bottom="0" left="0"/>-->
+<!--            </padding>-->
+<!--            Login-->
+<!--        </Label>-->
+<!--        <TextField></TextField>-->
+<!--    </HBox>-->
+<!--    <HBox>-->
+<!--        <padding>-->
+<!--            <Insets top="10" right="10" bottom="10" left="10"/>-->
+<!--        </padding>-->
+<!--        <Label>-->
+<!--            <padding>-->
+<!--                <Insets top="0" right="10" bottom="0" left="0"/>-->
+<!--            </padding>-->
+<!--            Password-->
+<!--        </Label>-->
+<!--        <TextField></TextField>-->
+<!--    </HBox>-->
+<!--    <Button>LOGIN</Button>-->
+<!--</VBox>-->
+
+<GridPane id="gridPanePhoto" layoutX="14.0" layoutY="24.0" prefHeight="362.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <!--        <TreeView id="mapTree" prefHeight="372.0" prefWidth="162.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />-->
+        <Label style="-fx-padding: 10;" text="USERNAME:" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginTF" style="-fx-padding: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <Label style="-fx-padding: 10;" text="PASSWORD:" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="passwordTF" style="-fx-padding: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+      <Label fx:id="timerL" text="Label" textAlignment="CENTER" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="150.0" text="LOGIN" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.rowSpan="2147483647" GridPane.valignment="TOP">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="150.0" text="EXIT" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+        </children>
+      </GridPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="100" prefWidth="188.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="384.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="186.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="340.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="340.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="340.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <padding>
+        <Insets right="10.0" />
+    </padding>
+</GridPane>
